@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <head>
+      <H2>Exercice - Addition avec JS</H2>
+      <script>
+         function somme(){
+             var valeur1, valeur2, resultat;
+             valeur1 = Number(document.getElementById("valeur1").value);
+             valeur2 = Number(document.getElementById("valeur2").value);
+             resultat = valeur1 + valeur2;
+             document.getElementById("resultat").value = resultat;
+         }
+      </script>
+   </head>
+   <body>
+    <link href="calculatrice.css" rel="stylesheet">
+     <p> Nombre1:
+      <input id="valeur1"> <br> <br>
+      Nombre2:
+      <input id="valeur2"><br> <br>
+      <button onclick="somme()">Calculer</button><br> <br>
+      Résultats: 
+      <input id="resultat">
+     </p> 
+
+   </body>
+</html>
